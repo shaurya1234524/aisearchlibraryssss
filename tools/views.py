@@ -255,3 +255,7 @@ from django.shortcuts import redirect
 def logout(request):
     logout(request)
     return redirect('login')  # or redirect('/') for homepage
+def sitemap(request):
+    return render(request,"sitemap.xml")
+def robots(request):
+    return render(request,"robots.txt")
