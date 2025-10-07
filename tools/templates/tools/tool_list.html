@@ -731,7 +731,12 @@
             </div>
         </div>
     </section>
-    
+
+
+
+
+
+
    <div class="pagination">
   {% if page_obj.has_previous %}
     <a href="?{% if search_query %}search={{ search_query }}&{% endif %}
@@ -749,7 +754,7 @@
               page={{ page_obj.next_page_number }}">Next</a>
   {% endif %}
 </div>
-
+ 
     <!-- How It Works Section -->
     <section id="how-it-works" style="padding: 80px 0; background-color: white;">
         <div class="container">
